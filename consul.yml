@@ -17,6 +17,7 @@ consul:
   command: -server -bootstrap
   image: progrium/consul:latest
   container_name: 'consul'
+  hostname: "consul1"
   environment:
     SERVICE_53_IGNORE: 'yes'
     SERVICE_8300_IGNORE: 'yes'
